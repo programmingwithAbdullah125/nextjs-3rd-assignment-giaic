@@ -1,19 +1,42 @@
-import React from "react"
-import Header from "./header/page"
-import Image from "next/image"
-import Link from "next/link"
-export default function Home() {
-    return(
-        <div>
-            {/* hero section */}
-            <section className="text-center py-20 bg-blue-100 w-full mt-10">
-                <h1 className="text-5xl font-bold">
-                </h1>
-                <p className="text-2xl mt-2 text-yellow-600 w-full">
-                 Frontend Developer | Programming with Abdullah <br /> Learning Artificial Intelligence
-                </p>
-                <Link href="/hire" className="mt-6 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Hire me</Link>
-            </section>
+import React from 'react';
+
+export default function HireMe() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
+      <div className="bg-white shadow-lg rounded-lg max-w-md w-full p-6">
+        <h2 className="text-2xl font-bold text-gray-800 text-center mb-4">Hire Me</h2>
+        
+        {/* Name */}
+        <div className="mb-4">
+          <h3 className="text-lg font-semibold text-gray-700">Name:</h3>
+          <p className="text-gray-600">Abdullah</p>
         </div>
-    )
+
+        {/* Age */}
+        <div className="mb-4">
+          <h3 className="text-lg font-semibold text-gray-700">Age:</h3>
+          <p className="text-gray-600">18</p>
+        </div>
+
+        {/* Email */}
+        <div className="mb-4">
+          <h3 className="text-lg font-semibold text-gray-700">Email:</h3>
+          <p className="text-gray-600">abdullahateeq331@gmail.com</p>
+        </div>
+
+        {/* Phone */}
+        <div className="mb-4">
+          <h3 className="text-lg font-semibold text-gray-700">Phone:</h3>
+          <p className="text-gray-600">03362310043</p>
+        </div>
+
+        {/* Skill */}
+        <div className="mb-4">
+          <h3 className="text-lg font-semibold text-gray-700">Skill:</h3>
+          <p className="text-gray-600">FrontEnd-Development | Programming</p>
+        </div>
+      </div>
+    </div>
+  );
 }
+
